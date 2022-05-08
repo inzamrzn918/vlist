@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_single">
+
+    <fragment
+        android:id="@+id/nav_single"
+        android:name="in.rbofficial.barpeta.vlist.ui.single.SingleFragment"
+        android:label="@string/menu_single"
+        tools:layout="@layout/fragment_bulk" />
+
+    <fragment
+        android:id="@+id/nav_bulk"
+        android:name="in.rbofficial.barpeta.vlist.ui.bulk.BulkFragment"
+        android:label="@string/menu_bulk"
+        tools:layout="@layout/fragment_single" />
+
+    <fragment
+        android:id="@+id/nav_offline"
+        android:name="in.rbofficial.barpeta.vlist.ui.offline.OfflineFragment"
+        android:label="@string/menu_offline"
+        tools:layout="@layout/fragment_offline" />
+</navigation>
